@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - Waste Management{% endblock %}
+
+{% block content %}
+<section class="admin-dashboard">
+    <h1 class="mb-4">Admin Dashboard</h1>
+    <p>Monitor system performance and manage users efficiently.</p>
+    <form>
+        <div class="form-group">
+            <label for="system-status">System Status</label>
+            <input type="text" class="form-control" id="system-status" placeholder="Enter system status">
+        </div>
+        <div class="form-group">
+            <label for="user-management">User Management</label>
+            <input type="text" class="form-control" id="user-management" placeholder="Enter user management details">
+        </div>
+        <div class="form-group">
+            <label for="performance-reports">Performance Reports</label>
+            <input type="text" class="form-control" id="performance-reports" placeholder="Enter performance reports">
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</section>
+{% endblock %}

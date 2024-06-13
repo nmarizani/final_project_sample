@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="features container mt-3">
+    <div class="row">
+        <div class="feature col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Our Mission</h2>
+                    <p class="card-text">Empowering communities to manage waste responsibly through innovative technology, fostering sustainability and protecting our environment for future generations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Our Vision</h2>
+                    <p class="card-text">To be the leading platform in waste management, revolutionizing how individuals and organizations reduce, recycle, and repurpose waste, contributing to a cleaner and greener planet by 2030</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature col-md-4 mb-3">
+          <div class="card h-100">
+              <div class="card-body">
+                  <h2 class="card-title">Our Goals</h2>
+                  <p class="card-text">Optimize waste collection schedules based on user data to reduce missed pickups and improve overall efficiency. Aim to significantly lower the amount of waste sent to landfills by promoting recycling and composting through the app.</p>
+              </div>
+          </div>
+      </div>
+        <div class="feature col-md-17 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Testimonials</h2>
+                    <p class="card-text"><h3>Annah Mwende, Local Business Owner:</h3>
+                      "Our business has significantly reduced its carbon footprint thanks to this app.<br> The scheduling feature ensures we never miss a collection, and the analytics help us understand and improve our waste management practices."<br>
+                       <h3>Deolinda Bio, Environmental Activist:</h3>
+                      "This app is a fantastic tool for anyone serious about sustainability.<br> It not only helps you manage your waste more efficiently but also educates you on best practices for reducing waste overall. Highly recommended!"<br>
+                       <h3>Kellia Muzira, School Administrator:</h3>
+                      "Integrating this app into our school's waste management system has been incredibly effective.<br> Students and staff are more engaged in recycling efforts, and the app's reminders and notifications keep everyone on track."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Socket.IO -->
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+<script>
+  const socket = io();
+  socket.on('connect', () => {
+    console.log('Connected to server');
+  });
+
+  // Add more Socket.IO event handlers here
+</script>
+{% endblock %}
+

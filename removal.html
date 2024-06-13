@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Waste Management{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .navbar-nav {
+      display: inherit;
+      justify-content: inherit;
+    }
+    .navbar-nav .nav-link {
+      color: white;
+    }
+    a{
+        color: black;
+    }
+    a:hover{
+        color: rgb(83, 83, 83);
+    }
+  </style>
+{% endblock %}
+
+{% block head %}
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
